@@ -1,0 +1,30 @@
+name: Run checks and tests
+run-name: ${{ github.actor }} is developing something amazing -> ${{ github.event.pull_request.title }} 🚀
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          cache: yarn
+
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+
+      - name: Install dependecies
+        run: yarn
+
+      - name: 🔎 Check synthax
+        run: yarn lint
