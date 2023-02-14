@@ -6,7 +6,7 @@ on:
     branches:
       - main
 env:
-  PUBLIC_URL: https://rtio.github.io/github-actions-101/
+  PUBLIC_URL: https://rtio.github.io/catify/
 jobs:
   build:
     runs-on: ubuntu-latest
