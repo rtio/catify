@@ -80,6 +80,24 @@
   padding: 4rem 0;
 }
 
+.voteButtons {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.voteButtons button {
+  text-align: center;
+  flex: 1;
+  border: none;
+  padding: 15px 32px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 .center::before {
   background: var(--secondary-glow);
   border-radius: 50%;
