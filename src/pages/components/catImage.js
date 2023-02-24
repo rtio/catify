@@ -20,7 +20,7 @@ const toBase64 = (str) =>
     : window.btoa(str)
 
 
-const CatImage = ({ src, loading }) => {
+const CatImage = ({ src }) => {
   const styles = {
     position: 'relative',
     width: '500px',
