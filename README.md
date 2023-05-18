@@ -4,7 +4,7 @@
 
 ## Description
 
-This is an educational app project designed for be used in my classes. The app is built using next.js, and powered by [The Cat API](https://thecatapi.com/) and it allows users to search and view animals' information.
+This is an educational app project designed for be used in my classes. The app is built using next.js, and powered by [The Cat API](https://thecatapi.com/) and it allows users to search and view animals's information.
 
 ## Installation
 
