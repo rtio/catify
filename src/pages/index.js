@@ -51,6 +51,7 @@ function CatVote() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <h1 className={styles.title}>👏🏽</h1>
         <div className={styles.center} >
           <div className={styles.card} style={ disabled ? {filter: "grayscale(100%)"} : {} } >
             { cat ? <div><CatImage src={cat.url} /></div> : <div style={customStyles}></div> }
